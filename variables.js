@@ -18,12 +18,5 @@ var monkey = $('#monkey'),
     life = 5,
     speed = 3,
     max_speed = 20,
-    counter = 0,
-    score_updated = false,
-    the_game = 0,
-    anim_id = 0,
-    egg_current_position = 0,
-    egg_top = 0,
-    monkey_top = container_height - monkey_height,
-    bullseye_num = 0;
+    monkey_top = container_height - monkey_height;
 life_span.text(life);
