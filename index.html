@@ -1,0 +1,48 @@
+<head>
+    <title>Bananas</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="score_help">
+            Score:
+            <span id="score">0</span> | Life:
+            <span id="life"></span>
+        </div>
+
+        <div id="branch"></div>
+
+        <div id="tree1" class="tree"></div>
+        <div id="tree2" class="tree"></div>
+        <div id="tree3" class="tree"></div>
+
+        <div id="banana1" class="banana" data-bullseye='1'></div>
+        <div id="banana2" class="banana" data-bullseye='2'></div>
+        <div id="banana3" class="banana" data-bullseye='3'></div>
+
+        <div id="bullseye1" class="bullseye"></div>
+        <div id="bullseye2" class="bullseye"></div>
+        <div id="bullseye3" class="bullseye"></div>
+
+        <div id="monkey"></div>
+
+        <div id="floor"></div>
+
+
+
+
+
+    </div>
+    <button id="restart">Restart</button>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="collision_detection.js"></script>
+    <script src="variables.js"></script>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

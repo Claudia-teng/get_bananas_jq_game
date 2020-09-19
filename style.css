@@ -1,0 +1,129 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#container {
+    height: 90%;
+    width: 100%;
+    margin:  20px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #f0efeb;
+}
+
+#score_help {
+    text-align: center;
+    font-size: 25px;
+   
+}
+
+
+.tree {
+    position: absolute;
+    height: 26%;
+    width: 14%;
+    top: 10%;
+    background: url('images/tree.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100;
+}
+
+#tree1 {
+    left: 15%;
+}
+
+#tree2 {
+    left: 45%;
+}
+
+#tree3 {
+    left: 75%;
+}
+
+.banana {
+    position: absolute;
+    top: 14%;
+    height: 10%;
+    width: 5%;
+    background: url('images/banana.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+
+#banana1 {
+    left: calc(15% + 14%/2 - 5%/2);
+}
+
+#banana2 {
+    left: calc(45% + 14%/2 - 5%/2);
+}
+
+#banana3 {
+    left: calc(75% + 14%/2 - 5%/2);
+}
+
+.bullseye {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    height: 8%;
+    width: 4%;
+    background: url('images/eggplant.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+}
+
+#bullseye1 {
+    left: calc(15% + 14%/2 - 4%/2);
+}
+
+#bullseye2 {
+    left: calc(45% + 14%/2 - 4%/2);
+}
+
+#bullseye3 {
+    left: calc(75% + 14%/2 - 4%/2);
+}
+
+#floor {
+    position: absolute;
+    height: 7%;
+    width: 100%;
+    background-color: #c9ada7;
+    bottom: 0;
+    z-index: 10;
+}
+
+#monkey {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 5px;
+    background: url('images/monkey.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+
+#restart {
+    border: 0;
+    position: absolute;
+    height: 10%;
+    width: 30%;
+    background-color: #ffa69e;
+    color: white;
+    top: 40%;
+    left: 35%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+    z-index: 200;
+}
